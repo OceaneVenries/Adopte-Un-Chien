@@ -1,3 +1,73 @@
-h1 {
-    color: red;
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+    font-family: Quando;
+}
+.nav{
+    height: 65px;
+    background-color: #F1DBBA;
+}
+.title{
+    margin-left: 45px;
+    margin-top: 12px;
+    font-size: 32px;
+    color: #FFFFFF;
+    -webkit-text-stroke: 1px #B49D72;
+}
+.logo{
+    background-image: url("img/logomob.png");
+    height: 55px;
+    width: 55px;
+    margin-left: 15px;
+    margin-top: 5px;
+    border-radius: 30px;
+
+}
+
+.menumob{
+    background-image: url("img/menumob.png");
+    height: 40px;
+    width: 38px;
+    margin-left: 7%;
+    margin-top: 12px;
+}
+
+.filariane{
+    margin-top: 10px ;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.linkariane{
+    text-decoration: none;
+    color: #B49D72;
+}
+
+.linkariane:hover{
+    color: #98835C;
+    text-decoration: underline;
+}
+
+.ligne_horizontal { 
+    display: flex; 
+    flex-direction: row; 
+} 
+
+.ligne_horizontal:before, 
+.ligne_horizontal:after { 
+    content: ""; 
+    flex: 1 1; 
+    border-bottom: 2px solid #000; 
+    margin: auto; 
+} 
+
+.texte{
+    color: #98835C;
+    font-size: 14px;
+    margin: 15px;
+}
+.foot{
+    bottom: 0;
+    margin-bottom:0;
 }
