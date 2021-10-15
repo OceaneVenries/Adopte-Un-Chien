@@ -1,5 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Quando&display=swap");
 
+.titre {
+    font-family: "Quando", serif;
+    overflow: hidden;
+    text-align: center;
+}
+
+.titre:before,
+.titre:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.titre:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.titre:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
 /* Barre de Navigation */
 
 .mynavbar {
@@ -49,34 +76,13 @@
         url(img/imgrottweiler.png) no-repeat right bottom fixed;
     background: cover;
     color: rgb(49, 44, 34);
-    height: 600px;
+    height: 700px;
+    border-bottom: 5px solid;
+    border-bottom-color: rgb(234, 219, 197);
 }
 
-.titre1 {
-    font-size: 2rem;
-    overflow: hidden;
-    text-align: center;
-}
-
-.titre1:before,
-.titre1:after {
-    background-color: #000;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 50%;
-}
-
-.titre1:before {
-    right: 0.5em;
-    margin-left: -50%;
-}
-
-.titre1:after {
-    left: 0.5em;
-    margin-right: -50%;
+.t1 {
+    font-size: 1.8rem;
 }
 
 .texte {
@@ -93,4 +99,48 @@
 .btn-chien:active {
     color: #e1ccac;
     background: rgb(49, 44, 34);
+}
+
+/*Bloc 2*/
+
+.bloc2 {
+    font-family: "Quando", serif;
+    color: rgb(49, 44, 34);
+    background: linear-gradient(rgb(234, 219, 197), rgb(255, 255, 255) 90%);
+}
+
+.card {
+    background: transparent;
+}
+
+.t2 {
+    font-size: 1.5rem;
+}
+
+/*Footer*/
+.footer {
+    background-color: rgb(156, 136, 105);
+    font-family: "Quando", serif;
+}
+
+.foot-link {
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.foot-link {
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom 0.2s ease-in-out, border-color 0.5s ease;
+}
+
+.foot-link:hover {
+    color: rgb(49, 44, 34);
+    padding-bottom: 8px;
+    border-bottom-color: rgb(49, 44, 34);
+}
+
+.small {
+    font-size: 0.7rem;
+    color: white;
 }
