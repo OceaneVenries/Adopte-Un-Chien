@@ -1,85 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Adopte un chien</title>
+
+        <!--Integration Bootstrap-->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" hre:0f="style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Quando&display=swap"
-            rel="stylesheet"
-        />
+
+        <!--Integration du CSS-->
+        <link rel="stylesheet" href="style.css" />
+
+        <title>Adopte un chien</title>
+
     </head>
     <body>
-        <main class="main-container">
-            <nav
-                class="navbar navbar-expand-lg navbar-dark"
-                style="background-color: #f6d2af"
-            >
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="img/logomob.png" />Adopte un chien
-                    </a>
-                    <ul class="navbar-nav ">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Accueil</a>
+        <nav class="mynavbar navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-4 py-1.5" href="#"><img src="img/logo.png"/> Adopte un Chien</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item pe-5">
+                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="event.html">Evenements</a>
+                        <li class="nav-item pe-5">
+                            <a class="nav-link" href="#">Evenements</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="chien.html"
-                                >Chiens à l'Adoption</a
-                            >
+                        <li class="nav-item pe-5">
+                            <a class="nav-link" href="#">Chiens à l'Adoption</a>
                         </li>
                     </ul>
+                    <a class="btn btn-contact rounded-1" href="#">Nous Contacter</a>
                 </div>
-                <div
-                    class="
-                        container-fluid
-                        justify-content-end
-                    "
-                >
-                    <form class="d-none d-lg-flex">
-                        <button class="btn" type="button">
-                            <img
-                                src="https://img.icons8.com/bubbles/70/000000/instagram-new--v1.png"
-                                alt="Instragram"
-                            />
-                        </button>
-                        <button class="btn" type="button">
-                            <img
-                                src="https://img.icons8.com/bubbles/70/000000/facebook.png"
-                                alt="Facebook"
-                            />
-                        </button>
-                    </form>
+            </div>
+        </nav>
+        <nav class="mybread" aria-label="breadcrumb">
+            <ol class="breadcrumb pt-2 mb-0 pb-2 ms-4">
+                <li class="breadcrumb-item active" aria-current="page">Accueil</li>
+            </ol>
+        </nav>
+        <section class="bloc1 pt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="titre1 py-3 pt-auto">
+                        Qui Sommes Nous ?
+                        </h1>
+                        <div class="d-flex flex-column">
+                            <p class="texte">L’association “Adopte un chien” reccueille beaucoup beaucoup de chiens et khkazhdkjzdkjnzkzjdhnkhddgkjsnqk shkhd
+                            uiihhdkj hhdk jdkjh hdhkdiu h hdd hdkjhdiuhdj hdkjdhaiuzdhd yhu ygtfrtgyhujh ygftgy huygtfrtgyhu ygtfrdtgyhuygtfrtgy
+                            hujhyg tfgyhu ygtfgy huygtfrdftgyh gtfrd tgyhugtfr tgyt permet aux chiens de trouver une famille
+                            aimante.L’association “Adopte un chien” reccueille beaucoup beaucoup de chiens et khkazhdkjzdkjnzkzjdhnkhddgkjsnqk
+                            shkhd uiihhdkj hhdk jdkjh hdhkdiu h hdd hdkjhdiuhdj hdkjdhaiuzdhd yhkhkazhdkjzdkjnzkzjdhnkhddgkjsnqk shkhd uiihhdkj
+                            hhdk jdkjh hdhkdiu h hdd hdkjhdiuhdj hdkjdhaiuzdhd yhu ygtfrtgyhujh ygftgy huygtfrtgyhu ygtfrdtgyhuygtfrtgy hujhyg
+                            tfgyhu ygtfgy huygtfrdftgyh gtfrd tgyhugtfr tgyt permet aux chiens de trouver une famille aimante.
+                            </p>
+                            <button class="btn btn-chien btn-md rounded-1 mx-auto">Voir les Chiens</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
                 </div>
-            </nav>
-            <h2 class="ligne_horizontal">Qui Sommes Nous ?</h2>
-            <p class="texte">
-                L’association “Adopte un chien” reccueille beaucoup beaucoup de
-                chiens et khkazhdkjzdkjnzkzjdhnkhddgkjsnqk shkhd uiihhdkj hhdk
-                jdkjh hdhkdiu h hdd hdkjhdiuhdj hdkjdhaiuzdhd yhu ygtfrtgyhujh
-                ygftgy huygtfrtgyhu ygtfrdtgyhuygtfrtgy hujhyg tfgyhu ygtfgy
-                huygtfrdftgyh gtfrd tgyhugtfr tgyt permet aux chiens de trouver
-                une famille aimante.
-            </p>
-            <footer class="foot">
-                <div class="rectanglefoot">
-                    <a class="sinscrire" href="sinscrire.html"></a>
-                </div>
-            </footer>
-        </main>
+            </div>
+        </section>
+
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
