@@ -1,73 +1,96 @@
-.container-fluid{
-    margin: 0;
-    padding: 0;
-    background: #FFFFFF;
-    font-family: Quando;
-}
-.nav{
-    height: 65px;
-    background-color: #F1DBBA;
-}
-.title{
-    margin-left: 45px;
-    margin-top: 12px;
-    font-size: 32px;
-    color: #FFFFFF;
-    -webkit-text-stroke: 1px #B49D72;
-}
-.logo{
-    background-image: url("img/logomob.png");
-    height: 55px;
-    width: 55px;
-    margin-left: 15px;
-    margin-top: 5px;
-    border-radius: 30px;
+@import url("https://fonts.googleapis.com/css2?family=Quando&display=swap");
 
+/* Barre de Navigation */
+
+.mynavbar {
+    background-color: rgb(189, 168, 137);
+    font-family: "Quando", serif;
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
-.menumob{
-    background-image: url("img/menumob.png");
-    height: 40px;
-    width: 38px;
-    margin-left: 7%;
-    margin-top: 12px;
+.mynavbar .nav-link {
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom 0.2s ease-in-out, border-color 0.5s ease;
 }
 
-.filariane{
-    margin-top: 10px ;
-    margin-left: 15px;
-    font-size: 12px;
+.mynavbar .nav-link:hover {
+    padding-bottom: 13px;
+    border-bottom-color: var(--bs-white);
 }
 
-.linkariane{
-    text-decoration: none;
-    color: #B49D72;
+.btn-contact {
+    color: var(--bs-white);
+    border-color: var(--bs-white);
+    transition: 0.5s;
 }
 
-.linkariane:hover{
-    color: #98835C;
-    text-decoration: underline;
+.btn-contact:hover,
+.btn-contact:active {
+    color: #e1ccac;
+    background: var(--bs-white);
 }
 
-.ligne_horizontal { 
-    display: flex; 
-    flex-direction: row; 
-} 
+/*Fil d'Ariane */
 
-.ligne_horizontal:before, 
-.ligne_horizontal:after { 
-    content: ""; 
-    flex: 1 1; 
-    border-bottom: 2px solid #000; 
-    margin: auto; 
-} 
-
-.texte{
-    color: #98835C;
-    font-size: 14px;
-    margin: 15px;
+.mybread {
+    background-color: rgb(234, 219, 197);
+    border-bottom: 1px solid;
+    border-bottom-color: var(--bs-white);
 }
-.foot{
-    bottom: 0;
-    margin-bottom:0;
+
+/*Bloc 1 Accueil */
+
+.bloc1 {
+    font-family: "quando", serif;
+    background: linear-gradient(
+            rgba(225, 204, 172, 0.7),
+            rgba(102, 90, 71, 0.9)
+        ),
+        url(img/imgrottweiler.png) no-repeat right bottom fixed;
+    background: cover;
+    color: rgb(49, 44, 34);
+    height: 600px;
+}
+
+.titre1 {
+    font-size: 2rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.titre1:before,
+.titre1:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.titre1:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.titre1:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.texte {
+    font-size: 0.95rem;
+}
+
+.btn-chien {
+    color: rgb(49, 44, 34);
+    border-color: rgb(49, 44, 34);
+    transition: 0.5s;
+}
+
+.btn-chien:hover,
+.btn-chien:active {
+    color: #e1ccac;
+    background: rgb(49, 44, 34);
 }
