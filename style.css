@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quando&display=swap");
 
+/*Général*/
+/*Taille Polices*/
 .titre {
     font-family: "Quando", serif;
     overflow: hidden;
@@ -25,6 +27,55 @@
 .titre:after {
     left: 0.5em;
     margin-right: -50%;
+}
+
+.t1 {
+    font-size: 1.8rem;
+}
+
+.t2 {
+    font-size: 1.5rem;
+}
+
+.texte {
+    font-size: 0.95rem;
+}
+
+.small {
+    font-size: 0.7rem;
+    color: white;
+}
+
+/*Bouton réutilisable*/
+
+.btn-chien {
+    color: rgb(49, 44, 34);
+    border-color: rgb(49, 44, 34);
+    transition: 0.5s;
+}
+
+.btn-chien:hover,
+.btn-chien:active {
+    color: #e1ccac;
+    background: rgb(49, 44, 34);
+}
+
+/*Autre*/
+
+.separation {
+    overflow: hidden;
+    text-align: center;
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    right: 0.5em;
+    margin-left: 25%;
+    left: 0.5em;
+    margin-right: 25%;
 }
 
 /* Barre de Navigation */
@@ -65,7 +116,17 @@
     border-bottom-color: var(--bs-white);
 }
 
-/*Bloc 1 Accueil */
+.link {
+    text-decoration: none;
+    color: rgb(49, 44, 34);
+}
+
+.link:hover {
+    color: rgb(49, 44, 34);
+    text-decoration: underline;
+}
+
+/*Bloc 1 avec Image (Accueil, Contact)*/
 
 .bloc1 {
     font-family: "quando", serif;
@@ -81,27 +142,27 @@
     border-bottom-color: rgb(234, 219, 197);
 }
 
-.t1 {
-    font-size: 1.8rem;
-}
+/*Bloc 1bis Sans Image (chiens, event)*/
 
-.texte {
-    font-size: 0.95rem;
-}
-
-.btn-chien {
+.bloc1bis {
+    font-family: "quando", serif;
+    background: linear-gradient(
+        rgba(225, 204, 172, 0.7),
+        rgba(102, 90, 71, 0.9)
+    );
     color: rgb(49, 44, 34);
-    border-color: rgb(49, 44, 34);
-    transition: 0.5s;
+    border-bottom: 5px solid;
+    border-bottom-color: rgb(234, 219, 197);
 }
 
-.btn-chien:hover,
-.btn-chien:active {
-    color: #e1ccac;
-    background: rgb(49, 44, 34);
+.blocevent {
+    height: 1800px;
 }
 
-/*Bloc 2*/
+.blocchien {
+    height: 1500px;
+}
+/*Bloc 2 (Accueil)*/
 
 .bloc2 {
     font-family: "Quando", serif;
@@ -113,17 +174,15 @@
     background: transparent;
 }
 
-.t2 {
-    font-size: 1.5rem;
-}
-
 /*Footer*/
+
 .footer {
     background-color: rgb(156, 136, 105);
     font-family: "Quando", serif;
 }
 
 .foot-link {
+    line-height: 1.7rem;
     text-decoration: none;
     color: white;
     border-bottom: 2px solid rgb(255, 255, 255);
@@ -136,11 +195,6 @@
 
 .foot-link:hover {
     color: rgb(49, 44, 34);
-    padding-bottom: 8px;
+    padding-bottom: 5px;
     border-bottom-color: rgb(49, 44, 34);
-}
-
-.small {
-    font-size: 0.7rem;
-    color: white;
 }
