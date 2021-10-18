@@ -150,18 +150,12 @@
         rgba(225, 204, 172, 0.7),
         rgba(102, 90, 71, 0.9)
     );
+    height: 100%;
     color: rgb(49, 44, 34);
     border-bottom: 5px solid;
     border-bottom-color: rgb(234, 219, 197);
 }
 
-.blocevent {
-    height: 1800px;
-}
-
-.blocchien {
-    height: 1500px;
-}
 /*Bloc 2 (Accueil)*/
 
 .bloc2 {
