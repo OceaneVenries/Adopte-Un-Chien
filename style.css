@@ -63,6 +63,17 @@
     background: rgb(49, 44, 34);
 }
 
+.btn-envoyer {
+    color: var(--bs-white);
+    border-color: var(--bs-white);
+    transition: 0.5s;
+}
+
+.btn-envoyer:hover,
+.btn-envoyer:active {
+    color: rgb(49, 44, 34);
+    background: var(--bs-white);
+}
 /*Autre*/
 
 .separation {
