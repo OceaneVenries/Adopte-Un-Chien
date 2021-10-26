@@ -46,6 +46,9 @@
     color: white;
 }
 
+.smallblack {
+    font-size: 0.7rem;
+}
 /*Bouton réutilisable*/
 
 .btn-chien {
