@@ -1,182 +1,351 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--Meta référencement-->
-    <meta name="description" content="Adopte un chien est une association chargées de prendre soin des chiens qui ont été abandonnés par leur ancien propriétaire avant de les proposer à l’adoption." />
-    <meta name="Subject" content="Association Pour Les Chiens">
-    <meta name="Copyright" content="Adopte Un Chien">
-    <meta name="Robots" content="all">
+        <!--Meta référencement-->
+        <meta
+            name="description"
+            content="Adopte un chien est une association chargées de prendre soin des chiens qui ont été abandonnés par leur ancien propriétaire avant de les proposer à l’adoption."
+        />
+        <meta name="Subject" content="Association Pour Les Chiens" />
+        <meta name="Copyright" content="Adopte Un Chien" />
+        <meta name="Robots" content="all" />
 
-    <!--Integration Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+        <!--Integration Bootstrap-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous"
+        />
 
-    <!--Integration du CSS-->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="img/icon.ico"/>
-    <title>Adopte Un Chien</title>
-
-</head>
-<body>
-    <!--Navbar-->
-    <nav class="mynavbar navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand mx-4 py-1.5" href="index.html"><img src="img/logo.png" alt="logo Adopte Un Chien"/> Adopte un Chien</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item pe-5">
-                        <a class="nav-link " aria-current="page" href="index.html">Accueil</a>
-                    </li>
-                    <li class="nav-item pe-5">
-                        <a class="nav-link" href="event.html">Evènements</a>
-                    </li>
-                    <li class="nav-item pe-5">
-                        <a class="nav-link" href="chiens.html">Chiens à l'Adoption</a>
-                    </li>
-                </ul>
-                <a class="btn btn-contact rounded-1" href="contact.html">Nous Contacter</a>
-            </div>
-        </div>
-    </nav>
-    <!--Fil d'ariane-->
-    <nav class="mybread" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-        <ol class="breadcrumb pt-2 mb-0 pb-2 ms-3">
-            <li class="breadcrumb-item"><a class="link" href="index.html">Accueil</a></li>
-            <li class="breadcrumb-item"><a class="link" href="event.html">Evènements</a></li>
-            <li class="breadcrumb-item"><a class="link" href="chiens.html">Chiens à l'Adoption</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Nous Contacter</li>
-        </ol>
-    </nav>
-    <!--Formulaire de Contact-->
-    <section class="bloccontact order-form py-5">
-        <div class="container">
-            <form>
-                <div class="row">
-                    <div class="col-md-6 col-sm position-relative">
-                        <h1 class="titre t1 text-center mb-3">Contactez-nous !</h1>
-                        <p class="texte mb-4">Pour participer à l'un de nos évènement, pour toutes demandes de renseignements ou autre, merci de remplir le formulaire ci-dessous, nous vous répondrons dans les plus brefs délais.</p>
-                        <div class="input-group mt-3 mb-3">
-                            <span class="input-group-text">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill"
-                                viewBox="0 0 16 16">
-                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                                </svg>
-                            </span>
-                            <input type="text" class="form-control" placeholder="NOM Prénom*", autofocus required/>
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
-                                </svg>
-                            </span>
-                            <input type="email" class="form-control" placeholder="Addresse E-mail*", required />
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill"
-                                viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                                </svg>
-                            </span>
-                            <input type="tel" class="form-control" placeholder="Numéro de Téléphone"/>
-                        </div>
-                        <div class="input-group mb-3">
-                            <label class="input-group-text" for="inputGroupSelect01">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-lg"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z"
-                                        fill="#000" />
-                                </svg>
-                            </label>
-                            <select class="form-select" id="inputGroupSelect01">
-                                <option class="text-muted">-Selectionner une option-</option>
-                                <option value="1">Demande D'information</option>
-                                <option value="2">Participer à un Evènement</option>
-                                <option value="3">Adopter un Chien</option>
-                                <option value="3">Autre</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 col-sm">
-                        </div>
-                        <div class="input-group">
-                            <span class="input-group-text">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text-fill"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z" />
-                            </svg>
-                            </span>
-                            <textarea class="form-control" aria-label="With textarea"></textarea>
-                        </div>
-                        <div class="form-check d-flex justify-content-center mt-4">
-                            <input type="checkbox" name="newsletter" id="newsletter" class="me-2 mt-1" />
-                            <label for="newsletter" class="inline-label">J'accepte de recevoir la newsletter</label>
-                        </div>
-                        <button type="submit" class="btn btn-envoyer btn-lg rounded-1 mt-5 position-absolute bottom--10 start-50 translate-middle-x" role="button">Envoyer</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-    <!--Footer-->
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="col-12">
-                    <ul class=" list-inline mt-2 mb-1 texte">
-                        <li class="list-inline-item"><a class="foot-link" href="index.html">Accueil</a></li>
-                        <li class="list-inline-item ms-4"><a class="foot-link" href="event.html">Evènements</a></li>
-                        <li class="list-inline-item ms-4"><a class="foot-link" href="chiens.html">Chiens à
-                                l'Adoption</a></li>
-                        <li class="list-inline-item ms-4"><a class="foot-link" href="contact.html">Nous Contacter</a>
+        <!--Integration du CSS-->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="img/icon.ico" />
+        <title>Adopte Un Chien</title>
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="mynavbar navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-4 py-1.5" href="index.html"
+                    ><img src="img/logo.png" alt="logo Adopte Un Chien" />
+                    Adopte un Chien</a
+                >
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item pe-5">
+                            <a
+                                class="nav-link"
+                                aria-current="page"
+                                href="index.html"
+                                >Accueil</a
+                            >
+                        </li>
+                        <li class="nav-item pe-5">
+                            <a class="nav-link" href="event.html">Evènements</a>
+                        </li>
+                        <li class="nav-item pe-5">
+                            <a class="nav-link" href="chiens.html"
+                                >Chiens à l'Adoption</a
+                            >
                         </li>
                     </ul>
+                    <a class="btn btn-contact rounded-1" href="contact.html"
+                        >Nous Contacter</a
+                    >
                 </div>
             </div>
-            <div class="row justify-content-center mt-2">
-                <div class="col-12">
-                    <div class="text-center">
-                        <ul class="list-unstyled list-inline mb-1">
+        </nav>
+        <!--Fil d'ariane-->
+        <nav
+            class="mybread"
+            style="--bs-breadcrumb-divider: '>'"
+            aria-label="breadcrumb"
+        >
+            <ol class="breadcrumb pt-2 mb-0 pb-2 ms-3">
+                <li class="breadcrumb-item">
+                    <a class="link" href="index.html">Accueil</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a class="link" href="event.html">Evènements</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a class="link" href="chiens.html">Chiens à l'Adoption</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    Nous Contacter
+                </li>
+            </ol>
+        </nav>
+        <!--Formulaire de Contact-->
+        <section class="bloccontact order-form py-5">
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 col-sm position-relative">
+                            <h1 class="titre t1 text-center mb-3">
+                                Contactez-nous !
+                            </h1>
+                            <p class="texte mb-4">
+                                Pour participer à l'un de nos évènement, pour
+                                toutes demandes de renseignements ou autre,
+                                merci de remplir le formulaire ci-dessous, nous
+                                vous répondrons dans les plus brefs délais.
+                            </p>
+                            <div class="input-group mt-3 mb-3">
+                                <span class="input-group-text">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-person-fill"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                                        />
+                                    </svg>
+                                </span>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="NOM Prénom*"
+                                    ,
+                                    autofocus
+                                    required
+                                />
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-envelope-fill"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+                                        />
+                                    </svg>
+                                </span>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Addresse E-mail*"
+                                    ,
+                                    required
+                                />
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-telephone-fill"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                                        />
+                                    </svg>
+                                </span>
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    placeholder="Numéro de Téléphone"
+                                />
+                            </div>
+                            <div class="input-group mb-3">
+                                <label
+                                    class="input-group-text"
+                                    for="inputGroupSelect01"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-info-lg"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z"
+                                            fill="#000"
+                                        />
+                                    </svg>
+                                </label>
+                                <select
+                                    class="form-select"
+                                    id="inputGroupSelect01"
+                                >
+                                    <option class="text-muted">
+                                        -Selectionner une option-
+                                    </option>
+                                    <option value="1">
+                                        Demande D'information
+                                    </option>
+                                    <option value="2">
+                                        Participer à un Evènement
+                                    </option>
+                                    <option value="3">Adopter un Chien</option>
+                                    <option value="3">Autre</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-sm"></div>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-chat-right-text-fill"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z"
+                                        />
+                                    </svg>
+                                </span>
+                                <textarea
+                                    class="form-control"
+                                    aria-label="With textarea"
+                                ></textarea>
+                            </div>
+                            <div
+                                class="
+                                    form-check
+                                    d-flex
+                                    justify-content-center
+                                    mt-4
+                                "
+                            >
+                                <input
+                                    type="checkbox"
+                                    name="newsletter"
+                                    id="newsletter"
+                                    class="me-2 mt-1"
+                                />
+                                <label for="newsletter" class="inline-label"
+                                    >J'accepte de recevoir la newsletter</label
+                                >
+                            </div>
+                            <button
+                                type="submit"
+                                class="
+                                    btn btn-envoyer btn-lg
+                                    rounded-1
+                                    mt-5
+                                    position-absolute
+                                    bottom--10
+                                    start-50
+                                    translate-middle-x
+                                "
+                                role="button"
+                            >
+                                Envoyer
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!--Footer-->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <ul class="list-inline mt-2 mb-1 texte">
                             <li class="list-inline-item">
-                                <a href="https://www.facebook.com/oceane.venries">
-                                    <img src="img/fb.png" alt="Facebook">
-                                </a>
+                                <a class="foot-link" href="index.html"
+                                    >Accueil</a
+                                >
                             </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.instagram.com/oceane_venries/?hl=fr">
-                                    <img src="img/insta.png" alt="Instagram">
-                                </a>
+                            <li class="list-inline-item ms-4">
+                                <a class="foot-link" href="event.html"
+                                    >Evènements</a
+                                >
+                            </li>
+                            <li class="list-inline-item ms-4">
+                                <a class="foot-link" href="chiens.html"
+                                    >Chiens à l'Adoption</a
+                                >
+                            </li>
+                            <li class="list-inline-item ms-4">
+                                <a class="foot-link" href="contact.html"
+                                    >Nous Contacter</a
+                                >
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="row mt-2 small">
-                <div class="col-12 text-center">
-                    <p class="small">Adresse : 3 Rue des Olivettes, 31000 TOULOUSE <br>
-                        Tél. : 06.36.30.32.61</p>
-                    <p class="copyright">AUC • Adopte un chien © 2021 - Tous
-                        droits réservés | Réalisé par Océane Venries </p>
+                <div class="row justify-content-center mt-2">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <ul class="list-unstyled list-inline mb-1">
+                                <li class="list-inline-item">
+                                    <a
+                                        href="https://www.facebook.com/oceane.venries"
+                                    >
+                                        <img src="img/fb.png" alt="Facebook" />
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a
+                                        href="https://www.instagram.com/oceane_venries/?hl=fr"
+                                    >
+                                        <img
+                                            src="img/insta.png"
+                                            alt="Instagram"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2 small">
+                    <div class="col-12 text-center">
+                        <p class="small">
+                            Adresse : 3 Rue des Olivettes, 31000 TOULOUSE <br />
+                            Tél. : 06.36.30.32.61
+                        </p>
+                        <p class="copyright">
+                            AUC • Adopte un chien © 2021 - Tous droits réservés
+                            | Réalisé par Océane Venries
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
-</body>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
